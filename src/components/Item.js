@@ -9,10 +9,10 @@ function Item({ name, category }) {
     )
   }
 
-  const inCart = isAdded ? "in-cart" : "null"  
+  const inCart = isAdded ? "in-cart" : ""  
 
   return (
-    <li className="{inCart}"> 
+    <li className={inCart}> 
       <span>{name}</span>
       <span className="category">{category}</span>
       <button onClick={handleCart} className="add">Add to Cart</button>
